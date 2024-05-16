@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.container {
+    background-color: #E8F1F2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-tarefa, .input-hora {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-tarefa {
+    width: calc(60% - 10px);
+}
+
+.input-hora {
+    width: calc(20% - 10px);
+}
+
+.btn-tarefa {
+    padding: 10px 20px;
+    border: none;
+    background-color: #13293D;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-tarefa:hover {
+    background-color: #0056b3;
+}
+
+.tarefas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tarefas li {
+    background-color: #006494;
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #F2F2F2;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarefas li:nth-child(odd) {
+    background-color: #247BA0;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.apagar, .editar, .cancelar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ff1212;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.apagar:hover, .editar:hover, .cancelar:hover {
+    color: #ad0303;
+}
+
+.confirmar, .salvar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #47ff47;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.confirmar:hover, .salvar:hover {
+    color: #01753b;
+}
+
+.fa-trash-o, .fa-pencil, .fa-save, .fa-check, .fa-times {
+    font-size: 20px;
+}
